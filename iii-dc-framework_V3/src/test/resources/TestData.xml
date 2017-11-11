@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<qaenv>
+	<dc>
+		<url>https://noidcbun-dc.iii.com/iii/dc-noida/login/auth</url>
+		<username>iii</username>
+		<password>74448ern</password>
+	</dc>
+</qaenv>

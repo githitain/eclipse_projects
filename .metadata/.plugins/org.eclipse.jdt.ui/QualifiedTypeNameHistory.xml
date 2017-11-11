@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="test.scenarios.testExtensions.DCWebSession"/>
+<fullyQualifiedTypeName name="test.scenarios.testExtensions.DCBasicSuite"/>
+<fullyQualifiedTypeName name="test.data.DCUserAccount"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="test.sessions.DCWeb2Session"/>
+<fullyQualifiedTypeName name="main.file.handling.xmlReader"/>
+<fullyQualifiedTypeName name="main.sessions.WebSession"/>
+<fullyQualifiedTypeName name="org.testng.ITestResult"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="test.sessions.DCWebSession"/>
+<fullyQualifiedTypeName name="main.tests.execution.BasicSuite"/>
+<fullyQualifiedTypeName name="main.sessions.BrowserSession"/>
+<fullyQualifiedTypeName name="main.config.TestSettings"/>
+<fullyQualifiedTypeName name="main.sessions.ProxyFactory"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="cucumber.api.java.Before"/>
+<fullyQualifiedTypeName name="cucumber.api.java.After"/>
+<fullyQualifiedTypeName name="org.testng.annotations.BeforeSuite"/>
+<fullyQualifiedTypeName name="org.testng.annotations.AfterSuite"/>
+<fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
+<fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
+<fullyQualifiedTypeName name="org.apache.commons.io.IOUtils"/>
+<fullyQualifiedTypeName name="test.scenarios.LoginEncoreSuite"/>
+<fullyQualifiedTypeName name="test.scenarios.LoginDCSuite"/>
+<fullyQualifiedTypeName name="DcTestSuites.DCSuites"/>
+<fullyQualifiedTypeName name="main.file.handling.proReader"/>
+<fullyQualifiedTypeName name="main.file.handling.exlReader"/>
+<fullyQualifiedTypeName name="com.file.handling.proReader"/>
+<fullyQualifiedTypeName name="com.file.handling.exlReader"/>
+<fullyQualifiedTypeName name="app.web.ui.pages.DCLoginPage"/>
+<fullyQualifiedTypeName name="app.sessions.DCWebSession"/>
+<fullyQualifiedTypeName name="com.main.Main"/>
+<fullyQualifiedTypeName name="appTestRunner.DCSuites"/>
+<fullyQualifiedTypeName name="app.test.scenarios.mainExecutor"/>
+<fullyQualifiedTypeName name="com.web.ui.pages.WebPage"/>
+<fullyQualifiedTypeName name="com.sessions.BrowserSession"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
+<fullyQualifiedTypeName name="com.main.mainExecutor"/>
+<fullyQualifiedTypeName name="org.testng.ITestListener"/>
+<fullyQualifiedTypeName name="cucumber.api.java.en.And"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+</qualifiedTypeNameHistroy>

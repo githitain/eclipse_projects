@@ -1,0 +1,35 @@
+##########---Time to wait
+time=30
+
+
+
+##########---Get Browser file
+#browser=htmlunit
+#browser=firefox
+#browser=internetexplorer
+browser=googlechrome
+#browser=safari
+
+##########---Get Browser exe path
+geckodriver=Resources//geckodriver.exe
+Gexe=D://Automation_Software//Selenium Jars//chromedriver.exe
+
+
+
+##########---Get Environment url
+local=https://noidcbun-dc.iii.com/iii/dc-noida/login/auth
+#local=http://www.naukri.com/
+#local=https://www.onlinesbi.com/
+Production=http://www.naukri.com/
+dev=http://www.naukri.com/
+
+###########--Get Other Filessss
+OR=Resources//OR1.xlsx
+TD=Resources//TestData.xml
+
+snapshotmodeStatus=ON
+FailedScreenshot=Resources//screenshots//Failed
+PassedScreenshot=Resources//screenshots//Passed
+
+
+

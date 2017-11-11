@@ -1,0 +1,27 @@
+Feature: Evalution Acquisitions -> Expenditure Trends
+Scenario: C60447-Verify Evaluation Home page
+	
+	Given User on DC Home Page
+	And Used is logged in
+	When Check Evaluation Home page UI
+	And Check Evaluation sub-categories.
+	And Check sub-categories present under Acquisitions category of Evaluation
+	And Check sub-categories present under Circulation category of Evaluation
+	And Check sub-categories present under Collection category of Evaluation
+	And Check sub-categories present under Encore category of Evaluation
+	Then Evaluation home page categories/sub-categories should be presented and aligned correctly.
+	And Close DC
+	
+	
+Scenario: C60332 Verify report links available under Acquisitions -> Expenditure Trends
+
+	Given User on DC Home Page
+	And User has verified that Expenditure Trends sub-category is present under Acquisitions
+	When Expand Expenditure Trends sub-category
+	And Check reports links present under Expenditure Trends sub-category
+	And Check mouse-hover for all the report links
+	And Collapse Expenditure Trends sub
+	Then Expenditure Trends sub-category should be collapsed
+	And Close DC
+		
+		

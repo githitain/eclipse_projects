@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 03 11:03:02 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>269 seconds (269639 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='appCucumberRunner.DCAllRunner.feature()'><b>feature</b><br>Test class: appCucumberRunner.DCAllRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Balancing-Collection Use -> Subject Use<br/>
+<a href="#Output-664091267" onClick='toggleBox("Output-664091267", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-664091267" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-664091267">
+11:03:03 [INFO] ########################################################################<br/>
+11:03:05 [INFO] Initializing browser<br/>
+11:03:08 [INFO] Navigating http://dc-autonoida.iii.com/iii/dc-noida/login/auth<br/>
+11:04:11 [INFO] ScreenShots Saved<br/>
+11:04:42 [INFO] ScreenShots Saved<br/>
+11:05:13 [INFO] ScreenShots Saved<br/>
+11:05:13 [INFO] no alert open
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DEL1-LHP-N00608', ip: '172.16.77.144', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\HITEND~1.PAW\AppData\Local\Temp\scoped_dir4632_20279}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 7081f5fc0be0b609d1bb139b7c38cb85<br/>
+11:05:13 [INFO] ScreenShots Saved<br/>
+11:05:13 [INFO] ########################################################################<br/>
+11:05:14 [INFO] Set flag BUFFER_LOCKED value FALSE<br/>
+</div>
+</td>
+<td></td>
+<td>137</td>
+<td>appCucumberRunner.DCAllRunner@145f66e3</td></tr>
+<tr>
+<td title='appCucumberRunner.DCAllRunner.feature()'><b>feature</b><br>Test class: appCucumberRunner.DCAllRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Maintenance-Clean-up -> Missing Items<br/>
+<a href="#Output-1179689991" onClick='toggleBox("Output-1179689991", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1179689991" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1179689991">
+11:05:20 [INFO] ########################################################################<br/>
+11:05:20 [INFO] Initializing browser<br/>
+11:05:23 [INFO] Navigating http://dc-autonoida.iii.com/iii/dc-noida/login/auth<br/>
+11:06:25 [INFO] ScreenShots Saved<br/>
+11:06:56 [INFO] ScreenShots Saved<br/>
+11:07:26 [INFO] ScreenShots Saved<br/>
+11:07:26 [INFO] no alert open
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DEL1-LHP-N00608', ip: '172.16.77.144', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\HITEND~1.PAW\AppData\Local\Temp\scoped_dir13128_6794}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: fda8e054ad6b22c3f7bc543968e1c3f2<br/>
+11:07:27 [INFO] ScreenShots Saved<br/>
+11:07:27 [INFO] ########################################################################<br/>
+11:07:28 [INFO] Set flag BUFFER_LOCKED value FALSE<br/>
+</div>
+</td>
+<td></td>
+<td>131</td>
+<td>appCucumberRunner.DCAllRunner@145f66e3</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,6 @@
+package com.test.results;
+
+public class TestCaseHandler extends Thread
+{
+
+}

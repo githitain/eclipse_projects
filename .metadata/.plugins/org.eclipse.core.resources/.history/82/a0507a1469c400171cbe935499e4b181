@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<qaenv>
+	<TDdc>
+		<url>http://dc-autonoida.iii.com/iii/dc-noida/login/auth</url>
+		<ip>172.16.77.114</ip>
+		<Susername>iii</Susername>
+		<Spassword>45271aut</Spassword>
+		<Supassword>50956aut</Supassword>
+		<username>dcadmin</username>
+		<password>noidaadmin</password>
+		<Projectlocation>D:\III_Automation\Emery_Automation\DC_Automation\iii-dc-framework_V5</Projectlocation>
+		<TestRail>https://iii.testrail.com/index.php?/suites/view/720&group_by=cases:section_id&group_order=asc&group_id=10755</TestRail>
+	</TDdc>
+	<TDHomePage>
+		<HP>Please Sign In</HP>
+		<LoginConfirmation>Welcome</LoginConfirmation>
+	</TDHomePage>
+	<TDEvalution>
+		<LoginConfirmation>Welcome</LoginConfirmation>
+	</TDEvalution>
+
+</qaenv>
+

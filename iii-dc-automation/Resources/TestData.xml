@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<qaenv>
+	<dc>
+		<url>http://dc-autonoida.iii.com/iii/dc-noida/login/auth</url>
+		<ip>172.16.77.114</ip>
+		<Susername>iii</Susername>
+		<Spassword>45271aut</Spassword>
+		<Supassword>50956aut</Supassword>
+		<username>dcadmin</username>
+		<password>noidaadmin</password>
+		<Projectlocation>D:\Hit_Worksapce2\iii-dc-automation\src\test\java\testCuucmber</Projectlocation>
+		<DCTestRail>https://iii.testrail.com/index.php?/suites/view/720&group_by=cases:section_id&group_order=asc&group_id=10755</DCTestRail>
+	</dc>
+</qaenv>
+

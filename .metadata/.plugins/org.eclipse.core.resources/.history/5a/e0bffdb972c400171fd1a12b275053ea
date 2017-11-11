@@ -1,0 +1,149 @@
+package appCucumberStepsDefinations;
+
+import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver; 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver; 
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import com.main.mainExecutor;
+
+import cucumber.api.DataTable;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class DCEvalutionAcquisitionsFea_Step extends mainExecutor
+{ 
+	
+	@Given("^User on DC Home Page$") 
+   public void verifyDCHomePage() throws Exception
+   { 
+		getSession().verifyText("TDHomePage","HP");
+   }
+	
+		
+   @When("^Used is logged in$") 
+   public void DCLogin() throws Exception
+   {
+	   
+	   getSession().getDCLoginPage().DClogin("TDdc","username","TDdc","password");
+	   getSession().verifyText("TDHomePage","LoginConfirmation");   
+	   
+	   
+    } 
+   
+   @And("^User currently is under Evaluation mode$") 
+   public void gotoEvaluation() throws Exception
+   {
+	   
+	   getSession().performClick("ORHomePage", "evalutionMode_btn");
+	   getSession().verifyElement("ORHomePage","evalutionClose_btn");   
+	   
+	   
+    } 
+	
+   @Then("^Check Evaluation Home page UI$") 
+   public void VerifyEvaluationPage() throws Exception 
+   {
+	  getSession().verifyElement("ORHomePage", "DevelopmentMode_btn");
+	  getSession().verifyElement("ORHomePage", "BalancingMode_btn");
+	  getSession().verifyElement("ORHomePage", "MaintenanceMode_btn");
+	  
+   } 
+   
+   
+   @And("^Check Evaluation sub-categories$") 
+   public void VerfiyEvaluationSubcategories() throws Exception 
+   {
+	   	  getSession().verifyElement("OREvaluation", "CategoriesAcquistions_btn");
+		  getSession().verifyElement("OREvaluation", "CategoriesCirculation_btn");
+		  getSession().verifyElement("OREvaluation", "CategoriesCollection_btn");
+		  getSession().verifyElement("OREvaluation", "CategoriesEncore_btn");
+   } 
+   
+   @And("^Check sub-categories present under Acquisitions category of Evaluation$") 
+   public void VerfiySubcategoriesUnderEvaluationAcquisitions() throws Exception 
+   {
+	   	  getSession().verifyElement("OREvaluation", "SubCategoriesExpenditures_btn");
+		  getSession().verifyElement("OREvaluation", "SubCategoriesExpenditureTrends_btn");
+		  
+   } 
+   
+   @When("^Expand Expenditure Trends sub-category$") 
+   public void ExpandExpenditureTrendsSubCategory() throws Exception
+   {
+	   
+	   getSession().performClick("OREvaluation", "SubCategoriesExpenditureTrends_btn");
+
+    }
+   
+   
+   @Then("^Check reports links present under Expenditure Trends sub-category$") 
+   public void VerifyReportsLinksPresentUnderExpenditureTrendsSubCategory() throws Exception 
+   {
+	  getSession().verifyElement("OREvaluation", "ExpenditureTrendsByBibLevel_link");
+	  getSession().verifyElement("OREvaluation", "ExpenditureTrendsByBibCallNumber_link");
+	  getSession().verifyElement("OREvaluation", "ExpenditureTrendsByBibFunds_link");
+	  getSession().verifyElement("OREvaluation", "ExpenditureTrendsByBibFormat_link");
+	  getSession().verifyElement("OREvaluation", "ExpenditureTrendsByBibLanguage_link");
+  } 
+   
+   @And("^Check mouse-hover for all the report links$") 
+   public void VerfiyMouseHover() throws Exception 
+   {
+	   	  getSession().verifyElement("OREvaluation", "SubCategoriesExpenditures_btn");
+   } 
+   
+   @When("^Collapse Expenditure Trends sub-category$") 
+   public void CollapseExpenditureTrendsSubCategory() throws Exception
+   {
+	   
+	   getSession().performClick("OREvaluation", "SubCategoriesExpenditureTrends_btn");
+
+    }
+   
+   @When("^Click on Expenditure Trends by Bib Level$") 
+   public void REPORTClickOnExpenditureTrendsBibLevel() throws Exception
+   {
+	   getSession().performClick("OREvaluation", "ExpenditureTrendsByBibLevel_link");
+    }
+   
+   @And("^Click on GO button and verify$") 
+   public void ClickGObuttonAndVerify() throws Exception 
+   {
+	   	  getSession().performClick("OREvaluation", "GO_btn");
+	   	  getSession().verifyElement("OREvaluation", "LoadingCancel_link");
+	   	  getSession().verifyElement("OREvaluation", "LoadingMsg_txt");
+   } 
+   
+   @Then("^Check format and alignment of the Expenditure Trends by Bib Level report$") 
+   public void REPORTVerifyExpenditureTrendsBIBLevel() throws Exception 
+   {
+	  getSession().verifyElement("OREvaluation", "ETBLBibLevel_Colum");
+	  getSession().verifyElement("OREvaluation", "ExpenditureTrendsByBibCallNumber_link");
+	  getSession().verifyElement("OREvaluation", "ExpenditureTrendsByBibFunds_link");
+	  getSession().verifyElement("OREvaluation", "ExpenditureTrendsByBibFormat_link");
+	  getSession().verifyElement("OREvaluation", "ExpenditureTrendsByBibLanguage_link");
+  } 
+   
+   @And("^Close DC$") 
+   public void close() throws Exception 
+   {
+	   getSession().getDCLoginPage().DClogout();
+	   getSession().verifyTextNotPersent("TDHomePage","LoginConfirmation");  
+	   
+	   closeDriver();
+	   System.out.println("DCMaintenanceFea_Step-4-than- Maintenance User is close the application");
+	  
+   } 
+   
+}

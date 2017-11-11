@@ -1,0 +1,80 @@
+package app.web.ui.pages;
+
+//import org.testng.annotations.Test;
+
+import com.sessions.BrowserSession;
+//import com.sessions.WebSession;
+import com.web.ui.pages.WebPage;
+
+public class DCLoginPage extends WebPage 
+{
+	
+	public DCLoginPage(BrowserSession session) 
+	{
+        super(session, "DCLoginPage");
+    }
+	
+	
+
+	public void DClogin() throws Exception
+	 {
+		try
+		{
+		
+		System.out.println("dc Login is started");
+		 session.sendKeys("DC", "username_inputbox", "dc", "username");
+		 session.sendKeys("DC", "password_inputbox", "dc", "password");
+		 session.performClick("DC", "submit_btn");
+		 
+		 session.PassedScreenshot("Login");
+		}
+		catch (Exception e) 
+		{
+			session.FailedScreenshot("Login");
+			session.close();
+			e.printStackTrace();
+			throw e;
+			
+		}
+		 
+		 
+	  }
+
+	 public void DClogout() throws Exception 
+	    {
+		 
+		 try
+			{
+			
+		 	session.performClick("DC", "signOut_link");
+		 	 session.PassedScreenshot("Login");
+		}
+		catch (Exception e) 
+		{
+			session.FailedScreenshot("Login");
+			session.close();
+			e.printStackTrace();
+			throw e;
+		}
+
+	   }
+	 
+	 public boolean  verifyTextONLogin(String s) throws Exception 
+	 {
+		 try
+		 {
+		        boolean b = session.getBrowser().getDriver().getPageSource().contains(s);
+		        session.PassedScreenshot("Text is persent" + s);
+		        return b;
+		     
+		 }
+		 catch(Exception e)
+		 {
+			 	session.FailedScreenshot("Text is not persent" + s);
+			 	throw e;
+		        //return false;
+		        
+		 }
+	 }
+	 
+}

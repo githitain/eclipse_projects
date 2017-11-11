@@ -1,0 +1,294 @@
+package com.sessions;
+
+import com.config.ConfigUpload;
+import com.file.handling.exlReader;
+//import com.file.handling.proReader;
+import com.file.handling.xmlReader;
+import com.google.common.collect.Iterables;
+import com.setting.TestSettings;
+import com.utilites.LogStatuses;
+import com.utilites.Logger;
+
+//import comTestRunner.MainRunner;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+import java.io.File;
+import java.sql.Timestamp;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
+
+public abstract class BrowserSession
+//public class BrowserSession
+{
+		private Project project;
+		protected final Browser browser;
+		protected final String mainWindowHandle;
+		//public String snapshotmode=null;
+		
+	
+		public BrowserSession()
+		{
+			System.out.println("Step-5-BrowserSession-BrowserSession");
+			
+			try
+			{
+				browser = BrowserFactory.getBrowser();
+			} catch (ExecutionException | InterruptedException | TimeoutException e) {
+				throw new RuntimeException(e);
+			}
+	
+			browser.getDriver().manage().timeouts().implicitlyWait(TestSettings.Current.getWaitElementTimeout(), TimeUnit.SECONDS);
+	
+			SessionsManager.addSession(this);
+			
+			mainWindowHandle = browser.getDriver().getWindowHandle();
+			//project = Project.SIERRA;
+		}
+	
+		public BrowserSession(Project project) {
+			this();
+			this.project = project;
+		}
+		
+		public Browser getBrowser()
+		{
+			return browser;
+		}
+	
+		public Project getProject()
+		{
+			return project;
+		}
+	
+		public void navigate(String url)
+		{
+			Logger.write(LogStatuses.INFO, "Navigating " + url);
+			browser.getDriver().get(url);
+		}
+	
+		public void close()
+		{
+			close(true);
+		}
+	
+		protected void close(boolean removeSession) 
+		{
+			browser.getDriver().quit();
+			if (removeSession) {
+				SessionsManager.removeSession(this);
+			}
+	
+			getBrowser().getProxy().getNativeProxy().stop();
+		}
+	
+		public void switchToLastOpenedWindow()
+		{
+			Set<String> windows = browser.getDriver().getWindowHandles();
+			String window = Iterables.getLast(windows);
+			browser.getDriver().switchTo().window(window);
+		}
+			
+		public void FailedScreenshot(String testCasename) throws Exception 
+		{
+			
+			
+			if (ConfigUpload.snapshotmode.equals("ON"))
+			{
+					
+				Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+				long uniqueNumber=timestamp.getTime();
+				
+				try
+				{
+					File scrFile = ( (TakesScreenshot) browser.getDriver()).getScreenshotAs(OutputType.FILE);
+					FileUtils.copyFile(scrFile, new File(ConfigUpload.FailedScreenshotPath+"\\"+testCasename+"_"+uniqueNumber+".jpg"));
+					Logger.write(LogStatuses.INFO, "Failed ScreenShots Saved");
+				}
+				catch (Exception e) 
+				{
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			else
+			{
+				Logger.write(LogStatuses.INFO, "snapshotmode is not ON");
+			}
+		}
+		
+		public void PassedScreenshot(String testCasename) throws Exception 
+		{
+			
+			
+			if (ConfigUpload.snapshotmode.equals("ON"))
+			{
+					
+				Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+				long uniqueNumber=timestamp.getTime();
+				
+				try
+				{
+					File scrFile = ( (TakesScreenshot) browser.getDriver()).getScreenshotAs(OutputType.FILE);
+					FileUtils.copyFile(scrFile, new File(ConfigUpload.PassedScreenshotPath+"\\"+testCasename+"_"+uniqueNumber+".jpg"));
+					Logger.write(LogStatuses.INFO, "Passed ScreenShots Saved");
+				}
+				catch (Exception e) 
+				{
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			else
+			{
+				Logger.write(LogStatuses.INFO, "snapshotmode is not ON");
+			}
+		}
+		
+		
+	
+		public void performClick(String sheetName, String keyName) throws Exception
+		{
+			try
+			{
+				System.out.println("Perform clickLink");
+				//driver.findElement(RespositoryParser.getbjectLocator("DC", "username")).sendKeys(s);
+				browser.getDriver().findElement(exlReader.getbjectLocator(sheetName, keyName )).click();
+				System.out.println("Done-Performed clickLink");
+				//browser.getDriver().findElement(by)
+			}
+				catch(AssertionError e)
+				 {
+					 	//System.out.println(T1+" : is not persent on the page");
+					 	Logger.write(LogStatuses.INFO, keyName  +" : is not persent on the page");
+					 	FailedScreenshot(keyName);
+					 	close();
+					 	throw e;
+				        //return false;
+				 }
+		}
+	
+		public  void  sendKeys(String sheetName, String keyName, String TestData) throws Exception 
+		{	
+		
+			try
+			{
+		
+			System.out.println("Perform Sendkeys");
+			//browser.getDriver().findElement(exlReader.getbjectLocator(sheetName, keyName )).sendKeys(xmlReader.getXMLTagValue(testDataTag,TestDataKey));
+			browser.getDriver().findElement(exlReader.getbjectLocator(sheetName, keyName )).sendKeys(TestData);
+			System.out.println("Done-Performed Sendkeys");
+			
+			}
+			
+			catch(AssertionError e)
+			 {
+				 	//System.out.println(T1+" : is not persent on the page");
+				 	Logger.write(LogStatuses.INFO, keyName  +" : is not persent on the page");
+				 	FailedScreenshot(keyName);
+				 	close();
+				 	throw e;
+			        //return false;
+			 }
+		}
+
+		
+		public void  verifyText(String Tag, String key ) throws Exception 
+		 {
+			 String T1 = (xmlReader.getXMLTagValue(Tag,key));	
+		 try
+			{
+			 //(xmlReader.getXMLTagValue(testDataTag,TestDataKey))	
+			 
+				 String pageText=browser.getDriver().getPageSource(); 
+				 Assert.assertTrue(pageText.contains(T1));
+				 //System.out.println(T1  +" : is persent on the page");
+				 Logger.write(LogStatuses.INFO, T1  +" : is persent on the page");
+				 PassedScreenshot(T1);
+
+			 }
+			 catch(AssertionError e)
+			 {
+				 	//System.out.println(T1+" : is not persent on the page");
+				 	Logger.write(LogStatuses.INFO, T1  +" : is not persent on the page");
+				 	FailedScreenshot(T1);
+				 	close();
+				 	throw e;
+			        //return false;
+			 }
+		 }
+		 
+		
+		public void  verifyTextNotPersent(String Tag, String key ) throws Exception 
+		 {
+			 String T1 = (xmlReader.getXMLTagValue(Tag,key));	
+		 try
+			{
+			 //(xmlReader.getXMLTagValue(testDataTag,TestDataKey))	
+			 
+				 String pageText=browser.getDriver().getPageSource(); 
+				 Assert.assertFalse(pageText.contains(T1));
+				 //System.out.println(T1  +" : is persent on the page");
+				 Logger.write(LogStatuses.INFO, T1  +" : is not persent on the page");
+				 PassedScreenshot(T1);
+
+			 }
+			 catch(AssertionError e)
+			 {
+				 	//System.out.println(T1+" : is not persent on the page");
+				 	Logger.write(LogStatuses.INFO, T1  +" : is persent on the page");
+				 	FailedScreenshot(T1);
+				 	close();
+				 	throw e;
+			        //return false;
+			 }
+		 }
+		
+		
+		public void verifyElement(String sheetName, String keyName) throws Exception
+		{
+				List<WebElement> we;
+				try
+				{	
+					we=browser.getDriver().findElements(exlReader.getbjectLocator(sheetName, keyName ));
+				
+					if(we.isEmpty())
+					{
+						
+						Logger.write(LogStatuses.INFO, we  +" : is not persent on the page");
+						FailedScreenshot(keyName);
+						close();
+						throw new NullPointerException("No element found");
+					}
+					
+					else
+					{
+						Logger.write(LogStatuses.INFO, we  +" : is persent on the page");
+					
+						 PassedScreenshot(keyName);
+					}
+				}
+				 catch(Exception e)
+				 {
+					 FailedScreenshot(keyName);
+					 close();
+					 throw e;
+					 
+				 }
+		}
+		 
+	
+		
+		//public abstract void logout() 
+		
+		public void logout() throws Exception 
+		{
+		}
+}

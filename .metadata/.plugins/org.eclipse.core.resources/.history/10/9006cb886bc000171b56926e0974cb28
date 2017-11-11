@@ -1,0 +1,61 @@
+package appCucumberStepsDefinations;
+
+import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver; 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver; 
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import com.main.mainExecutor;
+
+import cucumber.api.DataTable;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class DCMaintenanceFea_Step extends mainExecutor
+{ 
+	
+@Given("^Maintenance User is on DC Home Page$") 
+   public void goToDC()
+   { 
+		System.out.println("goToDC");	  
+   }
+	
+		
+   @When("^Weeding User is logged in into DC and currently is under Evaluation mode$") 
+   public void DCLogin1() throws Exception
+   {
+	   
+	   getSession().getDCLoginPage().DClogin();
+	   getSession().getDCLoginPage().DClogout();
+		   
+	   
+	   System.out.println("DCMaintenanceFea_Step-2-WHen - Weeding User is logged in into DC and currently is under Evaluation mode");
+	   
+    } 
+	
+   @Then("^Weeding User has verified$") 
+   public void Logout1() throws Exception 
+   {
+	 
+	   
+
+   } 
+   
+   @Then("^Maintenance User is close the application$") 
+   public void close() throws Exception 
+   {
+	   closeDriver();
+	   System.out.println("DCMaintenanceFea_Step-4-than- Maintenance User is close the application");
+	  
+   } 
+   
+}

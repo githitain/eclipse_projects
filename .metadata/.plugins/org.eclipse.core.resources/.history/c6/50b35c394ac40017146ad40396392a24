@@ -1,0 +1,69 @@
+package app.web.ui.pages;
+
+import org.testng.Assert;
+
+import com.file.handling.xmlReader;
+
+//import org.testng.annotations.Test;
+
+import com.sessions.BrowserSession;
+//import com.sessions.WebSession;
+import com.web.ui.pages.WebPage;
+
+public class DCLoginPage extends WebPage 
+{
+	
+	public DCLoginPage(BrowserSession session) 
+	{
+        super(session, "DCLoginPage");
+    }
+	
+	
+
+	public void DClogin (String Tag, String key ) throws Exception
+	 {
+		
+		String Ts1= (xmlReader.getXMLTagValue(Tag,key));	
+		try
+		{
+		
+		System.out.println("dc Login is started");
+		 session.sendKeys("DC", "username_inputbox", "dc", Ts1);
+		 session.sendKeys("DC", "password_inputbox", "dc", "password");
+		 session.performClick("DC", "submit_btn");
+		 
+		 session.PassedScreenshot("Login");
+		}
+		catch (Exception e) 
+		{
+			session.FailedScreenshot("Login");
+			session.close();
+			e.printStackTrace();
+			throw e;
+			
+		}
+		 
+		 
+	  }
+
+	 public void DClogout() throws Exception 
+	    {
+		 
+		 try
+			{
+			
+		 		session.performClick("DC", "signOut_link");
+		 	 session.PassedScreenshot("Login");
+		}
+		catch (Exception e) 
+		{
+			session.FailedScreenshot("Login");
+			session.close();
+			e.printStackTrace();
+			throw e;
+		}
+
+	   }
+	 
+	 
+}

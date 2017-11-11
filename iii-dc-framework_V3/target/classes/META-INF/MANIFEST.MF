@@ -1,0 +1,109 @@
+Manifest-Version: 1.0
+Implementation-Title: dc_automation_V3
+Implementation-Version: SNAPSHOT
+Built-By: hitendra.pawar
+Implementation-Vendor-Id: dc-automation_V3
+Class-Path: Support/dependency-jars/ Support/dependency-jars/maven-cuc
+ umber-reporting-2.8.0.jar Support/dependency-jars/maven-plugin-api-3.
+ 3.9.jar Support/dependency-jars/maven-model-3.3.9.jar Support/depende
+ ncy-jars/maven-artifact-3.3.9.jar Support/dependency-jars/org.eclipse
+ .sisu.plexus-0.3.2.jar Support/dependency-jars/cdi-api-1.0.jar Suppor
+ t/dependency-jars/jsr250-api-1.0.jar Support/dependency-jars/javax.in
+ ject-1.jar Support/dependency-jars/org.eclipse.sisu.inject-0.3.2.jar 
+ Support/dependency-jars/plexus-component-annotations-1.5.5.jar Suppor
+ t/dependency-jars/plexus-classworlds-2.5.2.jar Support/dependency-jar
+ s/maven-gpg-plugin-1.6.jar Support/dependency-jars/maven-project-2.2.
+ 1.jar Support/dependency-jars/maven-settings-2.2.1.jar Support/depend
+ ency-jars/maven-profile-2.2.1.jar Support/dependency-jars/maven-artif
+ act-manager-2.2.1.jar Support/dependency-jars/wagon-provider-api-1.0-
+ beta-6.jar Support/dependency-jars/backport-util-concurrent-3.1.jar S
+ upport/dependency-jars/maven-plugin-registry-2.2.1.jar Support/depend
+ ency-jars/plexus-interpolation-1.11.jar Support/dependency-jars/plexu
+ s-container-default-1.0-alpha-9-stable-1.jar Support/dependency-jars/
+ classworlds-1.1-alpha-2.jar Support/dependency-jars/maven-repository-
+ metadata-2.2.1.jar Support/dependency-jars/plexus-sec-dispatcher-1.4.
+ jar Support/dependency-jars/plexus-cipher-1.4.jar Support/dependency-
+ jars/cucumber-reporting-2.8.0.jar Support/dependency-jars/log4j-api-2
+ .6.2.jar Support/dependency-jars/log4j-core-2.6.2.jar Support/depende
+ ncy-jars/velocity-tools-1.4.jar Support/dependency-jars/joda-time-2.9
+ .4.jar Support/dependency-jars/zip4j-1.3.2.jar Support/dependency-jar
+ s/jsoup-1.9.2.jar Support/dependency-jars/selenium-java-3.4.0.jar Sup
+ port/dependency-jars/selenium-api-3.4.0.jar Support/dependency-jars/s
+ elenium-chrome-driver-3.4.0.jar Support/dependency-jars/selenium-edge
+ -driver-3.4.0.jar Support/dependency-jars/selenium-firefox-driver-3.4
+ .0.jar Support/dependency-jars/selenium-ie-driver-3.4.0.jar Support/d
+ ependency-jars/selenium-opera-driver-3.4.0.jar Support/dependency-jar
+ s/selenium-remote-driver-3.4.0.jar Support/dependency-jars/selenium-s
+ afari-driver-3.4.0.jar Support/dependency-jars/selenium-support-3.4.0
+ .jar Support/dependency-jars/cglib-nodep-3.2.4.jar Support/dependency
+ -jars/commons-exec-1.3.jar Support/dependency-jars/commons-lang3-3.5.
+ jar Support/dependency-jars/commons-codec-1.10.jar Support/dependency
+ -jars/commons-io-2.5.jar Support/dependency-jars/commons-logging-1.2.
+ jar Support/dependency-jars/sac-1.3.jar Support/dependency-jars/csspa
+ rser-0.9.22.jar Support/dependency-jars/gson-2.8.0.jar Support/depend
+ ency-jars/guava-21.0.jar Support/dependency-jars/hamcrest-core-1.3.ja
+ r Support/dependency-jars/htmlunit-2.26.jar Support/dependency-jars/h
+ tmlunit-core-js-2.26.jar Support/dependency-jars/neko-htmlunit-2.25.j
+ ar Support/dependency-jars/httpclient-4.5.3.jar Support/dependency-ja
+ rs/httpcore-4.4.6.jar Support/dependency-jars/httpmime-4.5.3.jar Supp
+ ort/dependency-jars/jetty-io-9.4.1.v20170120.jar Support/dependency-j
+ ars/jetty-util-9.4.1.v20170120.jar Support/dependency-jars/jna-4.1.0.
+ jar Support/dependency-jars/jna-platform-4.1.0.jar Support/dependency
+ -jars/junit-4.12.jar Support/dependency-jars/phantomjsdriver-1.4.0.ja
+ r Support/dependency-jars/htmlunit-driver-2.26.jar Support/dependency
+ -jars/javax.servlet-api-3.1.0.jar Support/dependency-jars/websocket-a
+ pi-9.4.3.v20170317.jar Support/dependency-jars/websocket-client-9.4.3
+ .v20170317.jar Support/dependency-jars/jetty-client-9.4.3.v20170317.j
+ ar Support/dependency-jars/jetty-http-9.4.3.v20170317.jar Support/dep
+ endency-jars/websocket-common-9.4.3.v20170317.jar Support/dependency-
+ jars/serializer-2.7.2.jar Support/dependency-jars/xalan-2.7.2.jar Sup
+ port/dependency-jars/xercesImpl-2.11.0.jar Support/dependency-jars/xm
+ l-apis-1.4.01.jar Support/dependency-jars/testng-6.8.jar Support/depe
+ ndency-jars/bsh-2.0b4.jar Support/dependency-jars/jcommander-1.27.jar
+  Support/dependency-jars/snakeyaml-1.6.jar Support/dependency-jars/cu
+ cumber-java-1.2.4.jar Support/dependency-jars/cucumber-core-1.2.4.jar
+  Support/dependency-jars/cucumber-html-0.2.3.jar Support/dependency-j
+ ars/cucumber-jvm-deps-1.0.5.jar Support/dependency-jars/gherkin-2.12.
+ 2.jar Support/dependency-jars/dom4j-1.6.1.jar Support/dependency-jars
+ /poi-3.9.jar Support/dependency-jars/poi-ooxml-3.9.jar Support/depend
+ ency-jars/poi-ooxml-schemas-3.9.jar Support/dependency-jars/log4j-1.2
+ .17.jar Support/dependency-jars/xmlbeans-2.6.0.jar Support/dependency
+ -jars/stax-api-1.0.1.jar Support/dependency-jars/cucumber-testng-1.2.
+ 4.jar Support/dependency-jars/cucumber-jvm-extentreport-2.0.1.jar Sup
+ port/dependency-jars/cucumber-junit-1.2.5.jar Support/dependency-jars
+ /cucumber-reports-0.0.2.jar Support/dependency-jars/json-io-2.2.31.ja
+ r Support/dependency-jars/cucumber-picocontainer-1.2.2.jar Support/de
+ pendency-jars/picocontainer-2.15.jar Support/dependency-jars/plexus-u
+ tils-3.0.1.jar Support/dependency-jars/maven-reporting-api-2.0.8.jar 
+ Support/dependency-jars/doxia-sink-api-1.0-alpha-9.jar Support/depend
+ ency-jars/maven-reporting-impl-2.0.4.3.jar Support/dependency-jars/do
+ xia-core-1.0.jar Support/dependency-jars/doxia-site-renderer-1.0.jar 
+ Support/dependency-jars/plexus-i18n-1.0-beta-7.jar Support/dependency
+ -jars/plexus-velocity-1.1.7.jar Support/dependency-jars/doxia-decorat
+ ion-model-1.0.jar Support/dependency-jars/doxia-module-apt-1.0.jar Su
+ pport/dependency-jars/doxia-module-fml-1.0.jar Support/dependency-jar
+ s/doxia-module-xdoc-1.0.jar Support/dependency-jars/doxia-module-xhtm
+ l-1.0.jar Support/dependency-jars/commons-validator-1.2.0.jar Support
+ /dependency-jars/commons-beanutils-1.7.0.jar Support/dependency-jars/
+ commons-digester-1.6.jar Support/dependency-jars/oro-2.0.8.jar Suppor
+ t/dependency-jars/maven-doxia-tools-1.0.2.jar Support/dependency-jars
+ /browsermob-core-2.1.4.jar Support/dependency-jars/littleproxy-1.1.0-
+ beta-bmp-15.jar Support/dependency-jars/jackson-core-2.8.5.jar Suppor
+ t/dependency-jars/jackson-databind-2.8.5.jar Support/dependency-jars/
+ jackson-annotations-2.8.5.jar Support/dependency-jars/dnsjava-2.1.7.j
+ ar Support/dependency-jars/slf4j-api-1.7.22.jar Support/dependency-ja
+ rs/jcl-over-slf4j-1.7.22.jar Support/dependency-jars/jzlib-1.1.3.jar 
+ Support/dependency-jars/netty-all-4.0.42.Final.jar Support/dependency
+ -jars/bcprov-jdk15on-1.56.jar Support/dependency-jars/bcpkix-jdk15on-
+ 1.56.jar Support/dependency-jars/mitm-2.1.4.jar Support/dependency-ja
+ rs/groovy-all-2.4.12.jar Support/dependency-jars/testrail-api-java-cl
+ ient-1.0.0.jar Support/dependency-jars/json-simple-1.1.jar Support/de
+ pendency-jars/cucumber-jvm-parallel-plugin-3.0.0.jar Support/dependen
+ cy-jars/velocity-1.7.jar Support/dependency-jars/commons-collections-
+ 3.2.1.jar Support/dependency-jars/commons-lang-2.4.jar Support/depend
+ ency-jars/gherkin-3.2.0.jar Support/dependency-jars/gherkin-jvm-deps-
+ 1.0.4.jar Support/dependency-jars/lombok-1.16.10.jar
+Build-Jdk: 1.8.0_131
+Created-By: Maven Integration for Eclipse
+Main-Class: com.dc.main.Main
+

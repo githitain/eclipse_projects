@@ -1,0 +1,66 @@
+Feature: Evalution Acquisitions -> Expenditure Trends
+Scenario: C60447-Verify Evaluation Home page
+	
+	Given User on DC Home Page
+	When Used is logged in
+	And User currently is under Evaluation mode
+	
+	Then Check Evaluation Home page UI
+#			Evaluation home page categories and all options should be aligned correctly.
+
+	And Check Evaluation sub-categories
+#				Following categories should be present:
+#				1. ACQUISITIONS
+#				2. CIRCULATION
+#				3. COLLECTION
+#				4. ENCORE
+
+	And Check sub-categories present under Acquisitions category of Evaluation
+#			Following sub-categories should be present:
+#			1. Expenditures
+#			2. Expenditure Trends
+
+	And Close DC
+	
+	
+
+Scenario: C60332-Verify report links available under Acquisitions -> Expenditure Trends
+		Given User on DC Home Page
+		And Used is logged in
+		And User currently is under Evaluation mode
+		And Check sub-categories present under Acquisitions category of Evaluation
+#			Following sub-categories should be present:
+#			1. Expenditures
+#			2. Expenditure Trends
+
+		When Expand Expenditure Trends sub-category
+#		Expenditure Trends sub-category should be expandable
+
+		Then Check reports links present under Expenditure Trends sub-category
+		
+#				Following reports should be present:
+#				Expenditure Trends by Bib Level
+#				Expenditure Trends by Call Number Range
+#				Expenditure Trends by Format
+#				Expenditure Trends by Funds
+#				Expenditure Trends by Language
+#				Expenditure Trends by Order Locations
+#				Expenditure Trends by Order Type
+#				Expenditure Trends by Vendors
+#				Expenditure Trends by Order Code 1
+#				Expenditure Trends by Order Code 2
+#				Expenditure Trends by Order Code 3
+#				Expenditure Trends by Order Code 4
+
+		And Check mouse-hover for all the report links
+#		Description for each report should be shown after hovering mouse on any of the 12 report links listed above
+		
+		When Collapse Expenditure Trends sub-category
+#		Expenditure Trends sub-category should be collapsed
+
+		And Close DC
+		
+Scenario : C60345 Verify "Expenditure Trends by Bib Level" report, under Acquisitions -> Expenditure Trends using default filters available		
+		
+		
+		

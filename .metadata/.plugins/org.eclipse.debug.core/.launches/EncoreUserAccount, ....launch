@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="encoreweb"/>
+<mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS">
+<mapEntry key="test.data.BibItems" value=""/>
+<mapEntry key="test.data.BibRecords" value=""/>
+<mapEntry key="test.data.EncoreUserAccount" value=""/>
+<mapEntry key="test.data.EncoreUserAccounts" value=""/>
+<mapEntry key="test.data.Facet" value=""/>
+<mapEntry key="test.scenarios.IntegrationSuite" value=""/>
+<mapEntry key="test.scenarios.LoginSuite" value=""/>
+<mapEntry key="test.scenarios.MyAccountSuite" value=""/>
+<mapEntry key="test.scenarios.MyCartSuite" value=""/>
+<mapEntry key="test.scenarios.requesting.RequestItTests" value=""/>
+<mapEntry key="test.scenarios.search.RecordInfoTests" value=""/>
+<mapEntry key="test.scenarios.search.advanced.ComplexSearchTests" value=""/>
+<mapEntry key="test.scenarios.search.basic.SearchByValueTests" value=""/>
+<mapEntry key="test.scenarios.search.facets.FacetsSuite" value=""/>
+<mapEntry key="test.scenarios.search.results.SortingTests" value=""/>
+<mapEntry key="test.scenarios.testExtensions.EncoreBasicSuite" value=""/>
+<mapEntry key="test.sessions.EncoreWebSession" value=""/>
+<mapEntry key="test.ui.objects.AdvancedSearchObjects.AdvancedSearchEntity" value=""/>
+<mapEntry key="test.ui.objects.AdvancedSearchObjects.AdvancedSearchFirstEntity" value=""/>
+<mapEntry key="test.ui.objects.AdvancedSearchObjects.CurrentRefinementsBlock" value=""/>
+<mapEntry key="test.ui.objects.BibRecordObject" value=""/>
+<mapEntry key="test.ui.objects.EncoreWebCheckBox" value=""/>
+<mapEntry key="test.ui.objects.FacetBlock" value=""/>
+<mapEntry key="test.ui.objects.TopMenu" value=""/>
+<mapEntry key="test.ui.objects.WebSelect" value=""/>
+<mapEntry key="test.ui.pages.AdvancedSearchPage" value=""/>
+<mapEntry key="test.ui.pages.EncoreMainPage" value=""/>
+<mapEntry key="test.ui.pages.ModifyPatronInformationWindow" value=""/>
+<mapEntry key="test.ui.pages.MyCartPage" value=""/>
+<mapEntry key="test.ui.pages.PatronInformationUpdatedWindow" value=""/>
+<mapEntry key="test.ui.pages.RecordInfoPage" value=""/>
+<mapEntry key="test.ui.pages.SearchPage" value=""/>
+<mapEntry key="test.ui.pages.WebPac.LoginPage" value=""/>
+<mapEntry key="test.ui.pages.WebPac.MyAccountPage" value=""/>
+<mapEntry key="test.ui.popups.ItemsPopup" value=""/>
+<mapEntry key="test.ui.popups.LoginToViewArticlesPopup" value=""/>
+<mapEntry key="test.ui.popups.LogoutConfirmationPopup" value=""/>
+<mapEntry key="test.ui.popups.MorePopup" value=""/>
+<mapEntry key="test.ui.popups.RequestItPopup" value=""/>
+<mapEntry key="test.ui.popups.RequestResultPopup" value=""/>
+<mapEntry key="test.ui.popups.SearchErrorPopup" value=""/>
+<mapEntry key="test.utils.SearchHelper" value=""/>
+</mapAttribute>
+<listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+<listEntry value="test.ui.pages.RecordInfoPage"/>
+<listEntry value="test.ui.pages.EncoreMainPage"/>
+<listEntry value="test.ui.popups.RequestResultPopup"/>
+<listEntry value="test.scenarios.search.results.SortingTests"/>
+<listEntry value="test.ui.popups.RequestItPopup"/>
+<listEntry value="test.ui.popups.MorePopup"/>
+<listEntry value="test.scenarios.IntegrationSuite"/>
+<listEntry value="test.scenarios.requesting.RequestItTests"/>
+<listEntry value="test.ui.objects.TopMenu"/>
+<listEntry value="test.ui.pages.AdvancedSearchPage"/>
+<listEntry value="test.ui.pages.PatronInformationUpdatedWindow"/>
+<listEntry value="test.ui.popups.LogoutConfirmationPopup"/>
+<listEntry value="test.ui.pages.SearchPage"/>
+<listEntry value="test.scenarios.search.advanced.ComplexSearchTests"/>
+<listEntry value="test.utils.SearchHelper"/>
+<listEntry value="test.data.EncoreUserAccounts"/>
+<listEntry value="test.scenarios.search.RecordInfoTests"/>
+<listEntry value="test.ui.popups.ItemsPopup"/>
+<listEntry value="test.ui.objects.AdvancedSearchObjects.AdvancedSearchFirstEntity"/>
+<listEntry value="test.scenarios.testExtensions.EncoreBasicSuite"/>
+<listEntry value="test.ui.popups.LoginToViewArticlesPopup"/>
+<listEntry value="test.scenarios.search.facets.FacetsSuite"/>
+<listEntry value="test.ui.objects.AdvancedSearchObjects.CurrentRefinementsBlock"/>
+<listEntry value="test.ui.objects.BibRecordObject"/>
+<listEntry value="test.ui.pages.WebPac.MyAccountPage"/>
+<listEntry value="test.ui.pages.MyCartPage"/>
+<listEntry value="test.ui.objects.WebSelect"/>
+<listEntry value="test.ui.objects.AdvancedSearchObjects.AdvancedSearchEntity"/>
+<listEntry value="test.scenarios.LoginSuite"/>
+<listEntry value="test.data.Facet"/>
+<listEntry value="test.scenarios.search.basic.SearchByValueTests"/>
+<listEntry value="test.sessions.EncoreWebSession"/>
+<listEntry value="test.data.BibRecords"/>
+<listEntry value="test.ui.objects.FacetBlock"/>
+<listEntry value="test.ui.pages.ModifyPatronInformationWindow"/>
+<listEntry value="test.ui.popups.SearchErrorPopup"/>
+<listEntry value="test.data.BibItems"/>
+<listEntry value="test.data.EncoreUserAccount"/>
+<listEntry value="test.scenarios.MyAccountSuite"/>
+<listEntry value="test.scenarios.MyCartSuite"/>
+<listEntry value="test.ui.pages.WebPac.LoginPage"/>
+<listEntry value="test.ui.objects.EncoreWebCheckBox"/>
+</listAttribute>
+<booleanAttribute key="org.testng.eclipse.DEBUG" value="false"/>
+<listAttribute key="org.testng.eclipse.GROUP_LIST"/>
+<listAttribute key="org.testng.eclipse.GROUP_LIST_CLASS"/>
+<stringAttribute key="org.testng.eclipse.LOG_LEVEL" value="2"/>
+<listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+<listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+<stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+<stringAttribute key="org.testng.eclipse.PROTOCOL" value="json"/>
+<intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+<booleanAttribute key="org.testng.eclipse.VERBOSE" value="false"/>
+</launchConfiguration>

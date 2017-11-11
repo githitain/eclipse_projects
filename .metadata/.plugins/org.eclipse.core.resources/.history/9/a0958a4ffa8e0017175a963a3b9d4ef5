@@ -1,0 +1,23 @@
+package API_Automation;
+
+
+import java.util.Map;
+import java.util.HashMap;
+import org.json.simple.JSONObject;
+ 
+public class testRail
+{
+	public static void main(String[] args) throws Exception
+	{
+		APIClient client = new APIClient("https://iii.testrail.com/");
+		System.out.println("this is done 1");
+		client.setUser("hpawar@iii.com");
+		System.out.println("this is done 2");
+		client.setPassword("changeme");
+		System.out.println("this is done 3");
+		JSONObject c = (JSONObject) client.sendGet("get_case/C215705");
+		System.out.println(c.get("title"));
+		
+		//T507427
+	}
+}

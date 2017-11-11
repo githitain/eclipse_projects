@@ -1,0 +1,103 @@
+1508129864685	Delete elements
+1508129918801	Delete elements
+1508130126928	Delete element
+1508130182891	Delete element
+1508130298914	Rename package 'com.dc.main'
+1508130323400	Rename package 'main.config'
+1508130352933	Rename package 'com.main.config'
+1508130393663	Delete elements
+1508130418679	Delete elements
+1508130428079	Delete elements
+1508130717031	Delete element
+1508132910232	Delete elements
+1508133017058	Delete elements
+1508133634448	Rename package 'com.main'
+1508133649904	Rename package 'common.main'
+1508133670583	Rename package 'main.exceptions'
+1508133682806	Rename package 'main.file.handling'
+1508133692862	Rename package 'main.flags'
+1508133744201	Rename package 'main.sessions'
+1508133853516	Move compilation unit
+1508133908376	Move compilation unit
+1508133955234	Rename package 'com.web.keywords'
+1508134045746	Rename package 'main.tests.execution'
+1508134055697	Rename package 'com.main.tests.suites'
+1508134084293	Rename type 'BasicSuite'
+1508134100247	Rename package 'com.main.test.suites'
+1508134200411	Move compilation units
+1508134362738	Move compilation units
+1508134447099	Rename package 'main.ui.pages'
+1508134583415	Rename package 'main.utils'
+1508134617736	Rename package 'com.main.exceptions'
+1508134633885	Rename package 'com.main.file.handling'
+1508134644419	Rename package 'com.main.flags'
+1508134654367	Rename package 'com.main.sessions'
+1508134665051	Rename package 'com.main.setting'
+1508134674097	Rename package 'com.main.test.suite'
+1508134681580	Rename package 'com.main.utilites'
+1508134690121	Rename package 'com.main.web.keywords'
+1508134697723	Rename package 'com.main.web.ui.pages'
+1508134725841	Rename package 'test.scenarios'
+1508134805217	Rename package 'test.scenarios.testExtensions'
+1508134821277	Rename package 'test.sessions'
+1508134939035	Rename package 'test.ui.objects'
+1508134972473	Rename package 'com.ui.objects'
+1508134993088	Rename package 'test.ui.pages'
+1508135002337	Rename package 'app.ui.pages'
+1508136089372	Delete element
+1508136114175	Rename package 'DC_Runner'
+1508136153076	Rename type 'BalancingFeaRunner'
+1508136225942	Rename package 'DC_StepDefinations'
+1508136260939	Rename resource 'DC_features'
+1508136288163	Delete elements
+1508136311213	Rename type 'DCRunner'
+1508136332062	Rename type 'DCwebRunner'
+1508136349829	Rename package 'app.cucumber.Stepdefinations'
+1508136408896	Rename package 'DcTestSuites'
+1508136596397	Rename type 'DCMainTest'
+1508136628339	Rename type 'MainRunner'
+1508136639508	Rename type 'DCmain'
+1508136675538	Move compilation unit
+1508136827652	Delete element
+1508136833741	Delete element
+1508137194931	Rename package 'app.cucumber.Runner'
+1508137207794	Rename package 'app.dc.Stepdefinations'
+1508137594297	Delete elements
+1508138189881	Delete element
+1508138205342	Delete elements
+1508138597260	Copy file
+1508138601230	Delete elements
+1508138640535	Copy compilation unit
+1508138655385	Copy file
+1508138798326	Delete element
+1508138809070	Delete element
+1508139300478	Copy file
+1508139637417	Copy compilation unit
+1508139790083	Rename package 'app.dc.stepdefinations'
+1508139824785	Rename package 'cucumber'
+1508140042035	Rename package 'app.cucumber.runner'
+1508140062479	Rename package 'app.test.runner'
+1508140095737	Rename package 'cucumberTest'
+1508140111475	Rename package 'cucumberStepsDefinations'
+1508140139425	Rename resource 'app.dc.features'
+1508140146172	Rename resource 'appDCfeatures'
+1508140210313	Delete element
+1508140655715	Rename resource 'appDCFeatures'
+1508140693928	Rename resource 'Cleanup_MissingItems.feature'
+1508140716799	Delete element
+1508140743386	Rename resource 'DC_Cleanup_MissingItems.feature'
+1508140928489	Rename package 'com.test.runner'
+1508140938276	Rename package 'CommonTestRunner'
+1508148801478	Rename resource 'Budget_BudgetProjectionByFund.feature'
+1508148844264	Rename resource 'DC_Budget_BudgetProjectionByFund.feature'
+1508148972553	Rename resource 'DC_Balancing_Budget_BudgetProjectionByFund.feature'
+1508149072367	Rename type 'BalancingFea_Step'
+1508149077326	Rename type 'MaintenanceFea_Step'
+1508149091101	Rename resource 'DC_Balancing_Collection_SubjectUse.feature'
+1508149096437	Rename resource 'DC_Maintenance_CleanupMissingItems.feature'
+1508149270656	Rename package 'commonTestRunner'
+1508149651597	Rename resource 'DCBalancing_Collection_SubjectUse.feature'
+1508152535821	Move file
+1508152554566	Move file
+1508353318829	Move file
+1508353327720	Delete element

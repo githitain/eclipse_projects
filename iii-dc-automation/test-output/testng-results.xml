@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[09:14:37 [INFO] ########################################################################]]>
+    </line>
+    <line>
+      <![CDATA[09:14:37 [INFO] Starting test login1]]>
+    </line>
+    <line>
+      <![CDATA[09:14:39 [INFO] Initializing browser]]>
+    </line>
+    <line>
+      <![CDATA[09:14:43 [INFO] Navigating http://dc-autonoida.iii.com/iii/dc-noida/login/auth]]>
+    </line>
+    <line>
+      <![CDATA[09:14:47 [INFO] no alert open
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DEL1-LHP-N00608', ip: '172.16.77.144', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\HITEND~1.PAW\AppData\Local\Temp\scoped_dir3468_9848}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 04fe9c55eb50c471f301e21ea2f48278]]>
+    </line>
+    <line>
+      <![CDATA[09:14:47 [INFO] login1 test is ended]]>
+    </line>
+    <line>
+      <![CDATA[09:14:47 [INFO] ########################################################################]]>
+    </line>
+    <line>
+      <![CDATA[09:14:48 [INFO] Set flag BUFFER_LOCKED value FALSE]]>
+    </line>
+    <line>
+      <![CDATA[09:14:53 [INFO] ########################################################################]]>
+    </line>
+    <line>
+      <![CDATA[09:14:53 [INFO] Starting test login2]]>
+    </line>
+    <line>
+      <![CDATA[09:14:53 [INFO] Initializing browser]]>
+    </line>
+    <line>
+      <![CDATA[09:14:56 [INFO] Navigating http://dc-autonoida.iii.com/iii/dc-noida/login/auth]]>
+    </line>
+    <line>
+      <![CDATA[09:14:59 [INFO] no alert open
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DEL1-LHP-N00608', ip: '172.16.77.144', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\HITEND~1.PAW\AppData\Local\Temp\scoped_dir17804_29768}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 5953de977afc19f7e20ca5a61defe9df]]>
+    </line>
+    <line>
+      <![CDATA[09:14:59 [INFO] login2 test is ended]]>
+    </line>
+    <line>
+      <![CDATA[09:14:59 [INFO] ########################################################################]]>
+    </line>
+    <line>
+      <![CDATA[09:15:00 [INFO] Set flag BUFFER_LOCKED value FALSE]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="27155" started-at="2017-10-17T03:44:37Z" finished-at="2017-10-17T03:45:04Z">
+    <groups>
+      <group name="test">
+        <method signature="MainSuites.login1()[pri:0, instance:testCuucmber.MainSuites@43814d18]" name="login1" class="testCuucmber.MainSuites"/>
+        <method signature="MainSuites.login2()[pri:0, instance:testCuucmber.MainSuites@43814d18]" name="login2" class="testCuucmber.MainSuites"/>
+      </group> <!-- test -->
+      <group name="smoke">
+        <method signature="MainSuites.login1()[pri:0, instance:testCuucmber.MainSuites@43814d18]" name="login1" class="testCuucmber.MainSuites"/>
+        <method signature="MainSuites.login2()[pri:0, instance:testCuucmber.MainSuites@43814d18]" name="login2" class="testCuucmber.MainSuites"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Default test" duration-ms="27155" started-at="2017-10-17T03:44:37Z" finished-at="2017-10-17T03:45:04Z">
+      <class name="testCuucmber.MainSuites">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCuucmber.MainSuites@43814d18]" name="beforeMethod" is-config="true" duration-ms="51" started-at="2017-10-17T09:14:37Z" finished-at="2017-10-17T09:14:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCuucmber.MainSuites.login1() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[09:14:37 [INFO] ########################################################################]]>
+            </line>
+            <line>
+              <![CDATA[09:14:37 [INFO] Starting test login1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testCuucmber.MainSuites@43814d18]" name="beforeTest" is-config="true" duration-ms="8974" started-at="2017-10-17T09:14:37Z" finished-at="2017-10-17T09:14:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[09:14:39 [INFO] Initializing browser]]>
+            </line>
+            <line>
+              <![CDATA[09:14:43 [INFO] Navigating http://dc-autonoida.iii.com/iii/dc-noida/login/auth]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:testCuucmber.MainSuites@43814d18]" name="login1" duration-ms="1298" started-at="2017-10-17T09:14:46Z" finished-at="2017-10-17T09:14:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[09:14:47 [INFO] no alert open
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DEL1-LHP-N00608', ip: '172.16.77.144', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\HITEND~1.PAW\AppData\Local\Temp\scoped_dir3468_9848}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 04fe9c55eb50c471f301e21ea2f48278]]>
+            </line>
+            <line>
+              <![CDATA[09:14:47 [INFO] login1 test is ended]]>
+            </line>
+            <line>
+              <![CDATA[09:14:47 [INFO] ########################################################################]]>
+            </line>
+            <line>
+              <![CDATA[09:14:48 [INFO] Set flag BUFFER_LOCKED value FALSE]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCuucmber.MainSuites@43814d18]" name="afterMethod" is-config="true" duration-ms="5605" started-at="2017-10-17T09:14:47Z" finished-at="2017-10-17T09:14:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login1 status=SUCCESS method=MainSuites.login1()[pri:0, instance:testCuucmber.MainSuites@43814d18] output=09:14:47 [INFO] no alert open
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DEL1-LHP-N00608', ip: '172.16.77.144', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\HITEND~1.PAW\AppData\Local\Temp\scoped_dir3468_9848}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 04fe9c55eb50c471f301e21ea2f48278]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testCuucmber.MainSuites@43814d18]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-17T09:14:53Z" finished-at="2017-10-17T09:14:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCuucmber.MainSuites.login2() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[09:14:53 [INFO] ########################################################################]]>
+            </line>
+            <line>
+              <![CDATA[09:14:53 [INFO] Starting test login2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testCuucmber.MainSuites@43814d18]" name="beforeTest" is-config="true" duration-ms="5298" started-at="2017-10-17T09:14:53Z" finished-at="2017-10-17T09:14:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[09:14:53 [INFO] Initializing browser]]>
+            </line>
+            <line>
+              <![CDATA[09:14:56 [INFO] Navigating http://dc-autonoida.iii.com/iii/dc-noida/login/auth]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login2()[pri:0, instance:testCuucmber.MainSuites@43814d18]" name="login2" duration-ms="656" started-at="2017-10-17T09:14:58Z" finished-at="2017-10-17T09:14:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[09:14:59 [INFO] no alert open
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DEL1-LHP-N00608', ip: '172.16.77.144', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\HITEND~1.PAW\AppData\Local\Temp\scoped_dir17804_29768}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 5953de977afc19f7e20ca5a61defe9df]]>
+            </line>
+            <line>
+              <![CDATA[09:14:59 [INFO] login2 test is ended]]>
+            </line>
+            <line>
+              <![CDATA[09:14:59 [INFO] ########################################################################]]>
+            </line>
+            <line>
+              <![CDATA[09:15:00 [INFO] Set flag BUFFER_LOCKED value FALSE]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login2 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCuucmber.MainSuites@43814d18]" name="afterMethod" is-config="true" duration-ms="5252" started-at="2017-10-17T09:14:59Z" finished-at="2017-10-17T09:15:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login2 status=SUCCESS method=MainSuites.login2()[pri:0, instance:testCuucmber.MainSuites@43814d18] output=09:14:59 [INFO] no alert open
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DEL1-LHP-N00608', ip: '172.16.77.144', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\HITEND~1.PAW\AppData\Local\Temp\scoped_dir17804_29768}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 5953de977afc19f7e20ca5a61defe9df]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCuucmber.MainSuites -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,12 @@
+package mock_calculater;
+
+public class MathApplication 
+{
+	CalculatorService calcService;
+	
+	
+	public void setCalculatorService(CalculatorService calcService)
+	{
+		this.calcService = calcService;
+	}
+}

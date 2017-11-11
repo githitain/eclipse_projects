@@ -1,0 +1,11 @@
+package mock_calculater;
+
+import org.junit.runner.RunWith;
+import org.mockito.runners.MockitoJUnitRunner;
+
+//@RunWith attaches a runner with the test class to initialize the test data
+@RunWith(MockitoJUnitRunner.class)
+public class MathApplicationTester 
+{
+
+}

@@ -1,0 +1,35 @@
+##The test configs for Encore project:
+
+#Test execution settings
+EncoreWebURL=https://noiencqabun-encore.iii.com/iii/encore/?lang=eng
+DCWebURL=http://dc-autonoida.iii.com/iii/dc-noida/login/auth
+DCWebURL=https://erqa.iii.com/iii/dc-pubhost
+AppServerURL=http://devops-4783-app.iii-lab.us:63000
+
+WaitElementTimeout=30
+WaitFlagsTimeout=30
+RepeatUIAction=false
+
+#Browser Settings
+BrowserName=Chrome
+BrowserType=Local
+PrintSOAPMessage=false
+
+#The path, where driver executable is located
+DriverPath=src//test//resources//drivers//
+
+#BrowserMob Proxy Settings
+UseChainedProxy=false
+ChainedProxyHost=localhost
+ChainedProxyPort=8081
+
+#TestRail Settings
+TestRailUrl=https://iii.testrail.com/
+TestRailUsername=anatolii.krotov@iii.com
+TestRailPassword=testrailpass
+
+#SSHcliend user
+SSHUser = iii
+SSHHost = 10.1.125.132
+SSHPort = 22
+SSHPassword = 21271qav

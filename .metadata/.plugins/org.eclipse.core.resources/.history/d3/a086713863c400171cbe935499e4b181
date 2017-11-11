@@ -1,0 +1,81 @@
+package appCucumberStepsDefinations;
+
+import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver; 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver; 
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import com.main.mainExecutor;
+
+import cucumber.api.DataTable;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class DCEvalutionAcquisitionsFea_Step extends mainExecutor
+{ 
+	
+	@Given("^User on DC Home Page$") 
+   public void verifyDCHomePage() throws Exception
+   { 
+		getSession().verifyText("HomePage","HP");
+   }
+	
+		
+   @When("^Used is logged in$") 
+   public void DCLogin() throws Exception
+   {
+	   
+	   getSession().getDCLoginPage().DClogin("dc","username","dc","password");
+	   getSession().verifyText("HomePage","LoginVerify");   
+	   
+	   
+    } 
+   
+   @And("^User currently is under Evaluation mode$") 
+   public void gotoEvaluation() throws Exception
+   {
+	   
+	   getSession().performClick("HomePage", "evalutionMode_btn");
+	   getSession().verifyElement("HomePage","evalutionClose_btn");   
+	   
+	   
+    } 
+	
+   @Then("^Check Evaluation Home page UI$") 
+   public void VerifyEvaluationPage() throws Exception 
+   {
+	  getSession().verifyElement("HomePage", "DevelopmentMode_btn");
+	  getSession().verifyElement("HomePage", "BalancingMode_btn");
+	  getSession().verifyElement("HomePage", "MaintenanceMode_btn");
+	  
+   } 
+   
+   
+   @And("^Check Evaluation sub-categories$") 
+   public void VerfiyEvaluationSubcategories() throws Exception 
+   {
+	  
+   } 
+   
+   
+   
+   @And("^Check EEEEEvaluation sub-categories$") 
+   public void close() throws Exception 
+   {
+	   getSession().getDCLoginPage().DClogout();
+	   closeDriver();
+	   System.out.println("DCMaintenanceFea_Step-4-than- Maintenance User is close the application");
+	  
+   } 
+   
+}

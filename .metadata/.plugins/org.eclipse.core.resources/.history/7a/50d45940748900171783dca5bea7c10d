@@ -1,0 +1,19 @@
+package API_Automation;
+
+import com.gurock.testrail.APIClient;
+import com.gurock.testrail.APIException;
+import java.util.Map;
+import java.util.HashMap;
+import org.json.simple.JSONObject;
+ 
+public class testRail
+{
+	public static void main(String[] args) throws Exception
+	{
+		APIClient client = new APIClient("http://<server>/testrail/");
+		client.setUser("..");
+		client.setPassword("..");
+ 
+		..
+	}
+}

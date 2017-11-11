@@ -1,0 +1,102 @@
+package appCucumberStepsDefinations;
+
+import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver; 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver; 
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import com.main.mainExecutor;
+
+import cucumber.api.DataTable;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class DCEvalutionAcquisitionsFea_Step extends mainExecutor
+{ 
+	
+	@Given("^User on DC Home Page$") 
+   public void verifyDCHomePage() throws Exception
+   { 
+		getSession().verifyText("TDHomePage","HP");
+   }
+	
+		
+   @When("^Used is logged in$") 
+   public void DCLogin() throws Exception
+   {
+	   
+	   getSession().getDCLoginPage().DClogin("TDdc","username","TDdc","password");
+	   getSession().verifyText("TDHomePage","LoginConfirmation");   
+	   
+	   
+    } 
+   
+   @And("^User currently is under Evaluation mode$") 
+   public void gotoEvaluation() throws Exception
+   {
+	   
+	   getSession().performClick("ORHomePage", "evalutionMode_btn");
+	   getSession().verifyElement("ORHomePage","evalutionClose_btn");   
+	   
+	   
+    } 
+	
+   @Then("^Check Evaluation Home page UI$") 
+   public void VerifyEvaluationPage() throws Exception 
+   {
+	  getSession().verifyElement("ORHomePage", "DevelopmentMode_btn");
+	  getSession().verifyElement("ORHomePage", "BalancingMode_btn");
+	  getSession().verifyElement("ORHomePage", "MaintenanceMode_btn");
+	  
+   } 
+   
+   
+   @And("^Check Evaluation sub-categories$") 
+   public void VerfiyEvaluationSubcategories() throws Exception 
+   {
+	   	  getSession().verifyElement("OREvaluation", "CategoriesAcquistions_btn");
+		  getSession().verifyElement("OREvaluation", "CategoriesCirculation_btn");
+		  getSession().verifyElement("OREvaluation", "CategoriesCollection_btn");
+		  getSession().verifyElement("OREvaluation", "CategoriesEncore_btn");
+   } 
+   
+   @And("^Check sub-categories present under Acquisitions category of Evaluation$") 
+   public void VerfiySubcategoriesUnderEvaluationAcquisitions() throws Exception 
+   {
+	   	  getSession().verifyElement("OREvaluation", "SubCategoriesExpenditures_btn");
+		  getSession().verifyElement("OREvaluation", "SubCategoriesExpenditureTrends_btn");
+		  
+   } 
+   
+   @When("^Expand Expenditure Trends sub-category$") 
+   public void ExpandExpenditureTrendsSubCategory() throws Exception
+   {
+	   
+	   getSession().getDCLoginPage().DClogin("TDdc","username","TDdc","password");
+	   getSession().verifyText("TDHomePage","LoginConfirmation");   
+	   
+	   
+    } 
+   
+   @And("^Close DC$") 
+   public void close() throws Exception 
+   {
+	   getSession().getDCLoginPage().DClogout();
+	   getSession().verifyTextNotPersent("TDHomePage","LoginConfirmation");  
+	   
+	   closeDriver();
+	   System.out.println("DCMaintenanceFea_Step-4-than- Maintenance User is close the application");
+	  
+   } 
+   
+}

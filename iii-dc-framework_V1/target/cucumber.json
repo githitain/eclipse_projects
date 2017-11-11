@@ -1,0 +1,154 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "C60646\tVerify Subject Use report, when default filters are applied",
+        "description": "",
+        "id": "balancing-collection-use--\u003e-subject-use;c60646-verify-subject-use-report,-when-default-filters-are-applied",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 200441922,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Balancing User is on DC Home Page",
+            "match": {
+              "location": "DCBalancingFea_Step.goToDC()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7968176920,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Subject User is logged in into DC and currently is under Evaluation mode",
+            "match": {
+              "location": "DCBalancingFea_Step.DCBalancingTest1()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6075999604,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Subject User has verified",
+            "match": {
+              "location": "DCBalancingFea_Step.DCBalancingTest2()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "C60647\tVerify Subject Use By Location report, when default filters are applied",
+        "description": "",
+        "id": "balancing-collection-use--\u003e-subject-use;c60647-verify-subject-use-by-location-report,-when-default-filters-are-applied",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4110527872,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 11,
+                "value": "#\t\tGiven Balancing User is on DC Home Page"
+              }
+            ],
+            "line": 12,
+            "name": "Location report User is logged in into DC and currently is under Evaluation mode",
+            "match": {
+              "location": "DCBalancingFea_Step.DCBalancingTest3()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6046208491,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Location report has verified",
+            "match": {
+              "location": "DCBalancingFea_Step.DCBalancingTest4()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Balancing-Collection Use -\u003e Subject Use",
+    "description": "",
+    "id": "balancing-collection-use--\u003e-subject-use",
+    "keyword": "Feature",
+    "uri": "Blance/DCBalancing_CollectionSubjectUse.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "C60663\tVerify Missing Items report under Maintenance -\u003e Weeding when default filters are applied",
+        "description": "",
+        "id": "maintenance-clean-up--\u003e-missing-items;c60663-verify-missing-items-report-under-maintenance--\u003e-weeding-when-default-filters-are-applied",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 48111640,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Maintenance User is on DC Home Page",
+            "match": {
+              "location": "DCMaintenanceFea_Step.goToDC()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3978976747,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Weeding User is logged in into DC and currently is under Evaluation mode",
+            "match": {
+              "location": "DCMaintenanceFea_Step.DCLogin1()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6018193350,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Weeding User has verified",
+            "match": {
+              "location": "DCMaintenanceFea_Step.Logout1()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Maintenance-Clean-up -\u003e Missing Items",
+    "description": "",
+    "id": "maintenance-clean-up--\u003e-missing-items",
+    "keyword": "Feature",
+    "uri": "Maintenance/DCMaintenance_CleanupMissingItems.feature"
+  }
+]

@@ -1,0 +1,67 @@
+Feature: Evalution Acquisitions -> Expenditure Trends
+Scenario: C60447-Verify Evaluation Home page
+	
+	Given User on DC Home Page
+	
+	When Used is logged in
+	
+	Then Check Evaluation Home page UI
+#			Evaluation home page categories and all options should be aligned correctly.
+
+	And Check Evaluation sub-categories.
+#				Following categories should be present:
+#				1. ACQUISITIONS
+#				2. CIRCULATION
+#				3. COLLECTION
+#				4. ENCORE
+
+	And Check sub-categories present under Acquisitions category of Evaluation
+#			Following sub-categories should be present:
+#			1. Expenditures
+#			2. Expenditure Trends
+
+	And Check sub-categories present under Circulation category of Evaluation
+#			Following sub-categories should be present:
+#			1. Agency
+#			1. Call Number Range
+#			2. Holdshelf
+#			3. Hourly Activity
+#			4. Items
+#			5. Owning Location
+#			6. Patrons
+#			7. Postal Code
+#			8. Resource Sharing (Local, ILL, INN-Reach)
+#			9. Statistics Group
+#			10. Top Titles
+#			11. Transaction Location
+#			12. Transaction Type
+
+	And Check sub-categories present under Collection category of Evaluation
+#			Following sub-categories should be present:
+#			1. Item Trends
+#			2. Title Trends
+#			3. Turnover
+#			4. Summary
+	
+	And Check sub-categories present under Encore category of Evaluation
+#			Following sub-categories should be present:
+#			1. Community Features
+#			2. Harvested Collections
+#			3. Searches
+
+	Then Evaluation home page categories/sub-categories should be presented and aligned correctly.
+	And Close DC
+	
+	
+Scenario: C60332 Verify report links available under Acquisitions -> Expenditure Trends
+
+	Given User on DC Home Page
+	And User has verified that Expenditure Trends sub-category is present under Acquisitions
+	When Expand Expenditure Trends sub-category
+	And Check reports links present under Expenditure Trends sub-category
+	And Check mouse-hover for all the report links
+	And Collapse Expenditure Trends sub
+	Then Expenditure Trends sub-category should be collapsed
+	And Close DC
+		
+		
